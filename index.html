@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>GitHub Profile Finder</h1>
+        <p class="subtitle">
+            Cari profil pengguna GitHub dengan mudah
+        </p>
+
+        <form id="searchForm">
+            <input
+                type="text"
+                id="username"
+                placeholder="Masukkan username GitHub..."
+                required
+            >
+
+            <button type="submit" id="searchButton">
+                Cari Profil
+            </button>
+        </form>
+
+        <div id="message"></div>
+
+        <div id="profile" class="profile hidden">
+            <img id="avatar" src="" alt="Avatar GitHub">
+
+            <h2 id="name"></h2>
+            <p id="bio"></p>
+
+            <div class="repo-box">
+                <span>Public Repositories</span>
+                <h3 id="repos"></h3>
+            </div>
+
+            <a id="profileLink" href="#" target="_blank">
+                Lihat Profil GitHub
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
